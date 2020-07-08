@@ -1,0 +1,16 @@
+.taskImg{
+  width: 20px;
+  height: 20px;
+  margin-right: 16px;
+  display: block;
+}
+
+.addBtn{
+  position: absolute;
+  bottom: 5rpx;
+  right: 15rpx;
+}
+.addBtn image{
+  width: 85rpx;
+  height: 85rpx;
+}

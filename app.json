@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/mine/index",
+    "pages/check/index",
+    "pages/news/index",
+    "pages/check/add/add",
+    "pages/check/detail/detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "打卡",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#000000",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/check/add/add",
+        "iconPath": "/images/tab/check.png",
+        "selectedIconPath": "/images/tab/check_in.png"
+      },
+      {
+        "pagePath": "pages/news/index",
+        "iconPath": "/images/tab/news.png",
+        "selectedIconPath": "/images/tab/news_in.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "/images/tab/mine.png",
+        "selectedIconPath": "/images/tab/mine_in.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
