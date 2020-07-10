@@ -2,17 +2,19 @@
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/mine/index",
     "pages/check/index",
     "pages/news/index",
+    "pages/mine/index",
     "pages/check/add/add",
-    "pages/check/detail/detail"
+    "pages/check/detail/detail",
+    "pages/check/edit/edit",
+    "pages/index/register/register"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#667fdd",
     "navigationBarTitleText": "打卡",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "white"
   },
   "tabBar": {
     "color": "#000",
@@ -20,7 +22,7 @@
     "backgroundColor": "#fff",
     "list": [
       {
-        "pagePath": "pages/check/add/add",
+        "pagePath": "pages/check/index",
         "iconPath": "/images/tab/check.png",
         "selectedIconPath": "/images/tab/check_in.png"
       },

@@ -1,0 +1,51 @@
+<!--index.wxml-->
+<view class="page">
+	<view class="page__hd">
+		<view class="container topImg">
+			<image src="../../../images/clock.jpg" mode="widthFix"></image>
+		</view>
+
+		<view class="weui-form__control-area" bindsubmit="formSubmit">
+			<view class="weui-cells__group weui-cells__group_form">
+				<view class="weui-cells__title">注册</view>
+				<view class="weui-cells weui-cells_form">
+					<view class="weui-cell weui-cell_active">
+						<view class="weui-cell__hd"><label class="weui-label">账号</label></view>
+						<view class="weui-cell__bd">
+							<input class="weui-input" placeholder="填写用户账号" name="userId" placeholder-class="weui-input__placeholder" bindchange="idChange" />
+						</view>
+					</view>
+					<view class="weui-cell weui-cell_active">
+						<view class="weui-cell__hd"><label class="weui-label">密码</label></view>
+						<view class="weui-cell__bd">
+							<input class="weui-input" placeholder="填写用户密码" name="userPassword1" type="password" placeholder-class="weui-input__placeholder" bindchange="pswChange1" />
+						</view>
+					</view>
+					<view class="weui-cell weui-cell_active">
+						<view class="weui-cell__hd"><label class="weui-label">再次输入密码</label></view>
+						<view class="weui-cell__bd">
+							<input class="weui-input" placeholder="再次填写用户密码" name="userPassword2" type="password" placeholder-class="weui-input__placeholder" bindchange="pswChange2" />
+						</view>
+					</view>
+					<view class="weui-cell weui-cell_active">
+						<view class="weui-cell__hd"><label class="weui-label">性别</label></view>
+						<picker bindchange="genderChange" value="{{userGender}}" class="sex" range="{{sexColumns}}">
+							<view>
+								{{sexColumns[userGender] == "" ? "请输入性别" : "" }}{{ sexColumns[userGender]}}
+							</view>
+						</picker>
+					</view>
+				</view>
+				<view class="weui-cell weui-cell_active">
+					<view class="weui-cell__hd"><label class="weui-label">出生日期</label></view>
+						<picker class="date" mode="date" value="{{userBirthday}}" bindchange="birthdayChange" end="{{endDate}}">
+							{{userBirthday}}
+						</picker>
+				</view>
+				<view class="button-sp-area">
+					<a class="weui-btn weui-btn_primary" formType="submit" bindtap="register">确定</a>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>
